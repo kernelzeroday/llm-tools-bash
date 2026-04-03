@@ -16,7 +16,10 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.urls]
+Homepage = "https://github.com/kernelzeroday/llm-tools-bash"
 Documentation = "https://llm.datasette.io/"
+Issues = "https://github.com/kernelzeroday/llm-tools-bash/issues"
+CI = "https://github.com/kernelzeroday/llm-tools-bash/actions"
 Upstream = "https://github.com/simonw/llm-tools-simpleeval"
 
 [project.entry-points.llm]
