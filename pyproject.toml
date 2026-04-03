@@ -1,6 +1,6 @@
 [project]
 name = "llm-tools-bash"
-version = "0.1.0"
+version = "0.5.1"
 description = "Run bash commands as an LLM tool (timeout, captured stdout/stderr)"
 readme = "README.md"
 authors = [{name = "Simon Willison"}, {name = "Fork authors"}]
@@ -12,8 +12,11 @@ dependencies = [
 ]
 
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["llm_tools_bash"]
 
 [project.urls]
 Homepage = "https://github.com/kernelzeroday/llm-tools-bash"
