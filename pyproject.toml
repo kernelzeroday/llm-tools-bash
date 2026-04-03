@@ -1,0 +1,26 @@
+[project]
+name = "llm-tools-bash"
+version = "0.1.0"
+description = "Run bash commands as an LLM tool (timeout, captured stdout/stderr)"
+readme = "README.md"
+authors = [{name = "Simon Willison"}, {name = "Fork authors"}]
+license = "Apache-2.0"
+classifiers = []
+requires-python = ">=3.9"
+dependencies = [
+    "llm",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Documentation = "https://llm.datasette.io/"
+Upstream = "https://github.com/simonw/llm-tools-simpleeval"
+
+[project.entry-points.llm]
+tools_bash = "llm_tools_bash"
+
+[project.optional-dependencies]
+test = ["pytest", "llm-echo>=0.3a1"]
